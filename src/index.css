@@ -45,7 +45,7 @@ h2 {
 a {
   text-decoration: none;
   color: #fff;
-  font-family: initial;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 25px;
   cursor: pointer;
