@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Clock = () => {
+const Clock = ({color}) => {
 
     const date = new Date();
 
@@ -24,7 +24,7 @@ const Clock = () => {
     }, [date])
 
   return (
-    <div className='clock-container'>
+    <div className='clock-container' style={color === "linear-gradient(to top, #8e0e00, #1f1c18)" ? {backgroundColor: "#450801"} : {backgroundColor: "#190933"}}>
         <h2>{
                 time.hours < 10 ? `0${time.hours}` : time.hours
             } h :
@@ -32,7 +32,7 @@ const Clock = () => {
         <h2>
             {
                 time.minutes < 10 ? `0${time.minutes}`: time.minutes
-            } min :
+            } m :
         </h2>
         <h2>
         {
